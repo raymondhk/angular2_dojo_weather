@@ -1,0 +1,12 @@
+<div class="box">
+  <div class="row">
+    <div class="col-md-12" id="location">
+      <h1>{{ cur_weather.name }}</h1>
+      <h3>Humidity: {{ cur_weather.main.humidity }}</h3>
+      <h3>Temperature (Average): {{ temp | number:'1.0-0' }}°F</h3>
+      <h3>Temperature (High): {{ tempMax | number:'1.0-0' }}°F</h3>
+      <h3>Temperature (Low): {{ tempMin | number:'1.0-0' }}°F</h3>
+      <h3>Status: {{ cur_weather.weather[0].description | titlecase }}</h3>
+    </div>
+  </div>
+</div>
